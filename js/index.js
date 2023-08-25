@@ -176,14 +176,15 @@ function toggleFullScreenMode() {
 }
 
 
-videoContainer.addEventListener("mouseout", () => { 
-    controls.style.visibility = "hidden"
-})
-videoContainer.addEventListener("mouseover", () => { 
-    controls.style.visibility = "visible"
-})
+// videoContainer.addEventListener("mouseout", () => { 
+//     controls.style.visibility = "hidden"
+// })
+// videoContainer.addEventListener("mouseover", () => { 
+//     controls.style.visibility = "visible"
+// })
 
-
+videoContainer.addEventListener("mousemove", showControls);
+videoContainer.addEventListener("mouseleave", hideControls);
 
 
 
@@ -220,3 +221,19 @@ function formatDuration(time) {
   }
 }
 
+
+
+
+let controlsTimeout;
+
+// Function to show controls
+function showControls() {
+  controls.style.visibility = "visible"
+  clearTimeout(controlsTimeout);
+  controlsTimeout = setTimeout(hideControls, 3000); // Hide controls after 3 seconds of inactivity
+}
+
+// Function to hide controls
+function hideControls() {
+  controls.style.visibility = "hidden"
+}
