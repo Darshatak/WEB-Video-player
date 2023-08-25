@@ -4,11 +4,11 @@ It has features like Play, Pause, Forward, Backwads, Change speed of video playb
 
 Keyboard Shortcuts:-
 
-Play/Pause = k
-Forward = l / rightarrow
-backward = j / leftArrow
-FUllScreen = F
-Volume Change = UpArrow or DownArrow
+Play/Pause = k <br>
+Forward = l / rightarrow <br>
+backward = j / leftArrow <br>
+FUllScreen = F <br>
+Volume Change = UpArrow or DownArrow <br>
 
 
 <h1> CheckOut Player: - https://darshatak.github.io/WEB-Video-player/</h1>
