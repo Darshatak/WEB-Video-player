@@ -11,4 +11,4 @@ FUllScreen = F
 Volume Change = UpArrow or DownArrow
 
 
-<h1> CheckOut Player: - https://darshatak.github.io/Video-Player/</h1>
+<h1> CheckOut Player: - https://darshatak.github.io/WEB-Video-player/</h1>
